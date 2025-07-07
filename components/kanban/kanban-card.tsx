@@ -8,7 +8,11 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Calendar, Clock, User, Flag, AlertTriangle, MessageSquare, Paperclip } from 'lucide-react';
 
 interface KanbanCardProps {
-  task: Task;
+  task: Task & {
+    is_blocking?: boolean;
+    estimated_hours?: number;
+    tags?: string[];
+  };
   onClick: () => void;
 }
 
