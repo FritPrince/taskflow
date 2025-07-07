@@ -28,7 +28,12 @@ import { toast } from 'sonner';
 interface TaskDetailsDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  task: Task;
+  task: Task & {
+    estimated_hours?: number;
+    is_blocking?: boolean;
+    tags?: string[];
+    assignee_id?: string | null;
+  };
   statuses: TaskStatus[];
   onTaskUpdated: (task: Task) => void;
   onTaskDeleted: (taskId: string) => void;
