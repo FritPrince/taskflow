@@ -78,6 +78,7 @@
   },
   "devDependencies": {
     "@types/react-big-calendar": "^1.16.2",
+    "@types/react-day-picker": "^5.3.0",
     "bufferutil": "^4.0.9",
     "utf-8-validate": "^6.0.5"
   }
