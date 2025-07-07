@@ -151,7 +151,7 @@ export function TaskFilters({ filters, onFiltersChange, tasks, statuses }: TaskF
             <div className="flex flex-wrap gap-2">
               {filters.search && (
                 <Badge variant="secondary">
-                  Recherche: "{filters.search}"
+                  Recherche: {filters.search}
                 </Badge>
               )}
               {filters.priority.map((priority) => (

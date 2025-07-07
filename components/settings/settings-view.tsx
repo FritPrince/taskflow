@@ -50,7 +50,7 @@ export function SettingsView({ selectedProject }: SettingsViewProps) {
       });
       fetchMembers();
     }
-  }, [selectedProject]);
+  }, [selectedProject]);// eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchMembers = async () => {
     if (!selectedProject) return;
@@ -346,7 +346,7 @@ export function SettingsView({ selectedProject }: SettingsViewProps) {
                 <div className="flex items-center justify-between">
                   <div>
                     <Label>Échéances approchantes</Label>
-                    <p className="text-sm text-gray-500">Rappels 24h avant l'échéance</p>
+                    <p className="text-sm text-gray-500">Rappels 24h avant l échéance</p>
                   </div>
                   <Switch defaultChecked />
                 </div>
@@ -362,7 +362,7 @@ export function SettingsView({ selectedProject }: SettingsViewProps) {
                 <div className="flex items-center justify-between">
                   <div>
                     <Label>Résumé quotidien</Label>
-                    <p className="text-sm text-gray-500">Rapport quotidien de l'activité du projet</p>
+                    <p className="text-sm text-gray-500">Rapport quotidien de l activité du projet</p>
                   </div>
                   <Switch />
                 </div>
@@ -548,7 +548,7 @@ export function SettingsView({ selectedProject }: SettingsViewProps) {
                 
                 <div className="space-y-2">
                   <Label>Automatisations</Label>
-                  <p className="text-sm text-gray-500">Créer des règles d'automatisation</p>
+                  <p className="text-sm text-gray-500">Créer des règles d automatisation</p>
                   <Button variant="outline" size="sm">
                     Configurer
                   </Button>

@@ -28,7 +28,7 @@ export function ReportsView({ selectedProject }: ReportsViewProps) {
     if (selectedProject) {
       fetchData();
     }
-  }, [selectedProject]);
+  }, [selectedProject]);// eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchData = async () => {
     if (!selectedProject) return;

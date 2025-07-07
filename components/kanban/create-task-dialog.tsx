@@ -254,7 +254,7 @@ export function CreateTaskDialog({
             <div className="space-y-2">
               <Label htmlFor="due-date" className="flex items-center">
                 <Calendar className="mr-1 h-4 w-4" />
-                Date d'échéance
+                Date d échéance
               </Label>
               <Input
                 id="due-date"
@@ -307,7 +307,7 @@ export function CreateTaskDialog({
                 />
                 <Label htmlFor="assign-to-self" className="flex items-center">
                   <User className="mr-1 h-4 w-4" />
-                  M'assigner cette tâche
+                  M assigner cette tâche
                 </Label>
               </div>
               

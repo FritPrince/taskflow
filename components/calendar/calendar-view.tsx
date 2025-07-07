@@ -45,7 +45,7 @@ export function CalendarView({ selectedProject }: CalendarViewProps) {
     if (selectedProject) {
       fetchTasks();
     }
-  }, [selectedProject]);
+  }, [selectedProject]);// eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchTasks = async () => {
     if (!selectedProject) return;

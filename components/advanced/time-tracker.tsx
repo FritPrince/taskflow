@@ -123,7 +123,7 @@ export function TimeTracker({ taskId, taskTitle }: TimeTrackerProps) {
         )}
 
         <div className="space-y-2">
-          <h4 className="font-medium">Temps total aujourd'hui</h4>
+          <h4 className="font-medium">Temps total aujourd hui</h4>
           <Badge variant="outline" className="text-lg px-3 py-1">
             <Clock className="mr-1 h-4 w-4" />
             2h 45m

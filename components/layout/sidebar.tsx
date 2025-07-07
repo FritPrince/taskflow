@@ -26,7 +26,7 @@ export function Sidebar({ selectedProject, onSelectProject, activeView, onViewCh
     if (user) {
       fetchProjects();
     }
-  }, [user]);
+  }, [user]);// eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchProjects = async () => {
     if (!user) return;

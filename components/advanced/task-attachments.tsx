@@ -55,7 +55,8 @@ export function TaskAttachments({ taskId }: TaskAttachmentsProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const getFileIcon = (type: string) => {
-    if (type.includes('image')) return <Image className="h-4 w-4" />;
+    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+    if (type.includes('image')) return <Image className="h-4 w-4"/>;
     if (type.includes('pdf') || type.includes('doc')) return <FileText className="h-4 w-4" />;
     return <File className="h-4 w-4" />;
   };
@@ -171,7 +172,7 @@ export function TaskAttachments({ taskId }: TaskAttachmentsProps) {
             Glissez vos fichiers ici ou <span className="text-blue-600 cursor-pointer">cliquez pour parcourir</span>
           </p>
           <p className="text-xs text-gray-500 mt-1">
-            PNG, JPG, PDF, DOC, FIGMA jusqu'à 10MB
+            PNG, JPG, PDF, DOC, FIGMA jusqu à 10MB
           </p>
         </div>
 

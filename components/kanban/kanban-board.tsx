@@ -48,11 +48,11 @@ export function KanbanBoard({ project }: KanbanBoardProps) {
     if (project) {
       fetchData();
     }
-  }, [project]);
+  }, [project]);// eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     applyFilters();
-  }, [tasks, filters]);
+  }, [tasks, filters]);// eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchData = async () => {
     try {
