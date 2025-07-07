@@ -10,7 +10,6 @@ import { Switch } from '@/components/ui/switch';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import TaskTemplates from '@/components/advanced/task-templates';
 import { supabase, type Project, type ProjectMember } from '@/lib/supabase';
 import { useAuth } from '@/hooks/use-auth';
 import { Settings, Users, Bell, Palette, Trash2, Plus, Mail, BookTemplate as FileTemplate, Zap, Shield, Database, Webhook } from 'lucide-react';
