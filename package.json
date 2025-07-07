@@ -76,6 +76,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/react-big-calendar": "^1.16.2"
+    "@types/react-big-calendar": "^1.16.2",
+    "bufferutil": "^4.0.9",
+    "utf-8-validate": "^6.0.5"
   }
 }
